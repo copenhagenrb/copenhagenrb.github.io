@@ -88,7 +88,7 @@ h3 {
   background: #ffffff;
   background: linear-gradient(to bottom, #ffffff, #f9f9f9);
   border-bottom: 1px solid #eeeeee;
-  padding: 30px 30px;
+  padding: 2em;
   overflow: hidden;
 }
 
@@ -106,7 +106,7 @@ h3 {
 header {
   margin-bottom: 1em;
   margin-top: 2em;
-  padding: 15px;
+  padding: 1.5em;
 
   .description {
     color: mix($body-text-color, $body-background-color);
@@ -131,7 +131,7 @@ header {
 
   .upb_event {
     margin-bottom: 1em;
-    margin-left: 30px;
+    margin-left: 2em;
   }
 }
 
