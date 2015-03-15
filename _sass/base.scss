@@ -1,0 +1,70 @@
+body {
+  background: $body-background-color;
+  background: linear-gradient(to bottom, rgb(227, 240, 245) 0%, rgb(174, 211, 227) 80%, rgb(169, 208, 225) 100%);
+  color: $body-text-color;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+/* Links */
+a:link {
+  color: $link-color;
+}
+
+a:visited {
+  color: $link-visited-color;
+}
+
+a:hover {
+  background-color: $link-color !important;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Headlines */
+h1, h2, h3 {
+  font-family: Palatino, 'Palatino Linotype', Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.24em;
+  line-height: 1.16em;
+  margin: 0;
+  padding: 0;
+
+  a:link,
+  a:visited {
+    color: $body-text-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 38px;
+
+  a:link,
+  a:visited {
+    color: $body-text-color;
+    text-decoration: none;
+  }
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+
+  & + p {
+    margin-top: 0;
+  }
+}
