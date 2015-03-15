@@ -39,33 +39,37 @@ h1 {
   line-height: 1.16em;
   margin: 0;
   padding: 0;
-}
 
-h1 a:link,
-h1 a:visited,
-h2 a:link,
-h2 a:visited {
-  color: #333333;
-  text-decoration: none;
-}
+  a:link,
+  a:visited {
+    color: #333333;
+    text-decoration: none;
+  }
 
-h1 a:hover {
-  text-decoration: underline;
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 h2 {
   font-size: 1.8em;
   line-height: 38px;
+
+  a:link,
+  a:visited {
+    color: #333333;
+    text-decoration: none;
+  }
 }
 
 h3 {
   font-size: 1em;
   margin-top: 1em;
   margin-bottom: 0;
-}
 
-h3 + p {
-  margin-top: 0;
+  & + p {
+    margin-top: 0;
+  }
 }
 
 .container {
@@ -97,35 +101,35 @@ header {
   margin-bottom: 1em;
   margin-top: 2em;
   padding: 15px;
-}
 
-header .description {
-  color: #434f54;
-  font-weight: bold;
-  font-size: 1.6em;
-  letter-spacing: -0.05em;
-  line-height: 1.6em;
+  .description {
+    color: #434f54;
+    font-weight: bold;
+    font-size: 1.6em;
+    letter-spacing: -0.05em;
+    line-height: 1.6em;
+  }
 }
 
 #next_meeting {
   background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/splash_green.png);
+
+  .upb_events {
+    margin-top: 1em;
+  }
+
+  .upb_date {
+    font-weight: bold;
+    display: inline;
+  }
+
+  .upb_event {
+    margin-bottom: 1em;
+    margin-left: 30px;
+  }
 }
 
-#next_meeting .upb_events {
-  margin-top: 1em;
-}
-
-#next_meeting .upb_date {
-  font-weight: bold;
-  display: inline;
-}
-
-#next_meeting .upb_event {
-  margin-bottom: 1em;
-  margin-left: 30px;
-}
-
-#next_meeting .upb_more a,
+.upb_more a,
 #mailing_list .more {
   background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/upcoming.gif) 0 50% no-repeat;
   display: block;
@@ -136,10 +140,10 @@ header .description {
 
 #mailing_list {
   background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/new_mail.png);
-}
 
-#mailing_list .more {
-  background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/google_groups.png) 0 50% no-repeat;
+  .more {
+    background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/google_groups.png) 0 50% no-repeat;
+  }
 }
 
 #what {
