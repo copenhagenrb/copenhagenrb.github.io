@@ -1,35 +1,29 @@
-#about {
+@mixin content-icon($key) {
   .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/users.png);
+    background-image: url("http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/#{$key}.png");
   }
+}
+
+#about {
+  @include content-icon('users');
 }
 
 #mailing_list {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/new_mail.png);
-  }
+  @include content-icon('new_mail');
 }
 
 #next_meeting {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/splash_green.png);
-  }
+  @include content-icon('splash_green');
 }
 
 #stream {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/monitor.png);
-  }
+  @include content-icon('monitor');
 }
 
 #what {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/ruby.png);
-  }
+  @include content-icon('ruby');
 }
 
 #who {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/smiley.png);
-  }
+  @include content-icon('smiley');
 }
