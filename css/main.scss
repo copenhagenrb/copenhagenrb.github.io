@@ -84,22 +84,18 @@ h3 {
   width: 90%;
 }
 
-.columns {
-  background: #ffffff;
+section {
   background: linear-gradient(to bottom, #ffffff, #f9f9f9);
   border-bottom: 1px solid #eeeeee;
-  padding: 2em;
-  overflow: hidden;
-}
-
-.column {
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  box-sizing: border-box;
   float: left;
+  padding: 2em;
   width: 50%;
 }
 
 .content {
+  background-position: 0 0;
+  background-repeat: no-repeat;
   padding: 0 30px 0 42px;
 }
 
@@ -118,7 +114,9 @@ header {
 }
 
 #next_meeting {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/splash_green.png);
+  .content {
+    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/splash_green.png);
+  }
 
   .upb_events {
     margin-top: 1em;
@@ -145,7 +143,9 @@ header {
 }
 
 #mailing_list {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/new_mail.png);
+  .content {
+    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/new_mail.png);
+  }
 
   .more {
     background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/google_groups.png) 0 50% no-repeat;
@@ -153,22 +153,31 @@ header {
 }
 
 #what {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/ruby.png);
+  .content {
+    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/ruby.png);
+  }
 }
 
 #who {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/smiley.png);
+  .content {
+    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/smiley.png);
+  }
 }
 
 #about {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/users.png);
+  .content {
+    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/users.png);
+  }
 }
 
 #stream {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/monitor.png);
+  .content {
+    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/monitor.png);
+  }
 }
 
 footer {
+  clear: both;
   font-size: 0.8em;
   padding: 2em;
   text-align: center;
