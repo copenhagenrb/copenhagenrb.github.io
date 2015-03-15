@@ -2,7 +2,8 @@
 # The main Sass file needs front matter (the dashes are enough)
 ---
 body {
-  background: #a5cee0 url(http://mentalized.net/files/copenhagenrb.dk/images/body_gradient.png) 0 0 repeat-x;
+  background: #a5cee0;
+  background: linear-gradient(to bottom, rgb(227, 240, 245) 0%, rgb(174, 211, 227) 80%, rgb(169, 208, 225) 100%);
 }
 
 /* Links */
@@ -75,7 +76,9 @@ h3 + p {
 }
 
 .columns {
-  background: #ffffff url(http://mentalized.net/files/copenhagenrb.dk/images/columns_gradient.png) 50% 100% repeat-x;
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  border-bottom: 1px solid #eeeeee;
   padding: 30px 30px;
   overflow: hidden;
 }
