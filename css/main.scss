@@ -26,8 +26,7 @@ a:hover {
 }
 
 /* Headlines */
-h1, h2, h3,
-#next_meeting .upb_header .upb_text {
+h1, h2, h3 {
   font-family: Palatino, 'Palatino Linotype', Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   letter-spacing: -0.05em;
@@ -44,7 +43,8 @@ h1 {
 
 h1 a:link,
 h1 a:visited,
-#next_meeting .upb_header a {
+h2 a:link,
+h2 a:visited {
   color: #333333;
   text-decoration: none;
 }
@@ -53,8 +53,7 @@ h1 a:hover {
   text-decoration: underline;
 }
 
-h2,
-#next_meeting .upb_header .upb_text {
+h2 {
   font-size: 1.8em;
   line-height: 38px;
 }
