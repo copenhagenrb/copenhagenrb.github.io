@@ -1,52 +1,226 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# The main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-
-
-
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+body {
+  background: #a5cee0 url(http://mentalized.net/files/copenhagenrb.dk/images/body_gradient.png) 0 0 repeat-x;
 }
 
+/* Links */
+a:link {
+  color: #41768c;
+}
 
+a:visited {
+  color: #66418c;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+a:hover {
+  background-color: #41768c !important;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Headlines */
+h1, h2, h3,
+#next_meeting .upb_header .upb_text {
+  font-family: Palatino, 'Palatino Linotype', Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.24em;
+  line-height: 1.16em;
+  margin: 0;
+  padding: 0;
+}
+
+h1 a:link,
+h1 a:visited,
+#next_meeting .upb_header a {
+  color: #333333;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: underline;
+}
+
+h2,
+#next_meeting .upb_header .upb_text {
+  font-size: 1.8em;
+  line-height: 38px;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+h3 + p {
+  margin-top: 0;
+}
+
+.container {
+  color: #333333;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.6em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.columns {
+  background: #ffffff url(http://mentalized.net/files/copenhagenrb.dk/images/columns_gradient.png) 50% 100% repeat-x;
+  padding: 30px 30px;
+  overflow: hidden;
+}
+
+.column {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  float: left;
+  width: 50%;
+}
+
+.content {
+  padding: 0 30px 0 42px;
+}
+
+#header {
+  margin-bottom: 1em;
+  margin-top: 2em;
+  padding: 15px;
+}
+
+#header .description {
+  color: #434f54;
+  font-weight: bold;
+  font-size: 1.6em;
+  letter-spacing: -0.05em;
+  line-height: 1.6em;
+}
+
+#next_meeting {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/splash_green.png);
+}
+
+#next_meeting .upb_events {
+  margin-top: 1em;
+}
+
+#next_meeting .upb_date {
+  font-weight: bold;
+  display: inline;
+}
+
+#next_meeting .upb_event {
+  margin-bottom: 1em;
+  margin-left: 30px;
+}
+
+#next_meeting .upb_more a,
+#mailing_list .more {
+  background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/upcoming.gif) 0 50% no-repeat;
+  display: block;
+  float: left;
+  min-height: 16px;
+  padding-left: 20px;
+}
+
+#mailing_list {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/new_mail.png);
+}
+
+#mailing_list .more {
+  background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/google_groups.png) 0 50% no-repeat;
+}
+
+#what {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/ruby.png);
+}
+
+#who {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/smiley.png);
+}
+
+#about {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/users.png);
+}
+
+#stream {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/monitor.png);
+}
+
+#stream .post {
+  clear: both;
+  padding-left: 0;
+  margin-left: -42px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1em;
+}
+
+#stream .post .date {
+  display: none;
+  font-weight: bold;
+  width: auto;
+}
+
+#stream .post .permalink {
+  /* Overlays a transparent link over the icon for the post */
+  border: none;
+  display: block;
+  float: left;
+  height: 32px;
+  overflow: hidden;
+  text-indent: -9999em;
+  width: 32px;
+}
+#stream .post a.permalink:hover {
+  background-color: transparent !important;
+}
+
+#stream .post div.conversation,
+#stream .post div.link,
+#stream .post div.photo,
+#stream .post div.quote,
+#stream .post div.regular {
+  background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/Globe.png) 0 0 no-repeat;
+  min-height: 32px;
+  padding-left: 42px;
+}
+
+#stream .post div.conversation {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/iChat.png);
+}
+#stream .post div.photo {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/picture.png);
+}
+#stream .post div.quote {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/iChat.png);
+}
+#stream .post div.regular {
+  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/edit.png);
+}
+
+#stream .post div.link a.link {
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+#stream .post div.conversation p {
+  margin-left: 42px;
+}
+
+#footer {
+  font-size: 10px;
+  padding: 15px;
+  text-align: center;
+}
