@@ -159,69 +159,6 @@ header .description {
   background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/monitor.png);
 }
 
-#stream .post {
-  clear: both;
-  padding-left: 0;
-  margin-left: -42px;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 1em;
-}
-
-#stream .post .date {
-  display: none;
-  font-weight: bold;
-  width: auto;
-}
-
-#stream .post .permalink {
-  /* Overlays a transparent link over the icon for the post */
-  border: none;
-  display: block;
-  float: left;
-  height: 32px;
-  overflow: hidden;
-  text-indent: -9999em;
-  width: 32px;
-}
-#stream .post a.permalink:hover {
-  background-color: transparent !important;
-}
-
-#stream .post div.conversation,
-#stream .post div.link,
-#stream .post div.photo,
-#stream .post div.quote,
-#stream .post div.regular {
-  background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/Globe.png) 0 0 no-repeat;
-  min-height: 32px;
-  padding-left: 42px;
-}
-
-#stream .post div.conversation {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/iChat.png);
-}
-#stream .post div.photo {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/picture.png);
-}
-#stream .post div.quote {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/iChat.png);
-}
-#stream .post div.regular {
-  background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/edit.png);
-}
-
-#stream .post div.link a.link {
-  font-weight: bold;
-  display: block;
-  width: 100%;
-}
-
-#stream .post div.conversation p {
-  margin-left: 42px;
-}
-
 footer {
   font-size: 0.8em;
   padding: 2em;
