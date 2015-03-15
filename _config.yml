@@ -11,3 +11,6 @@ github_username:  copenhagenrb
 
 # Build settings
 markdown: kramdown
+
+exclude:
+- README.md
