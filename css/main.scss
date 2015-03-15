@@ -1,10 +1,16 @@
 ---
 # The main Sass file needs front matter (the dashes are enough)
 ---
+
+$body-background-color: #a5cee0;
+$body-text-color: #333333;
+$link-color: #41768c;
+$link-visited-color: #66418c;
+
 body {
-  background: #a5cee0;
+  background: $body-background-color;
   background: linear-gradient(to bottom, rgb(227, 240, 245) 0%, rgb(174, 211, 227) 80%, rgb(169, 208, 225) 100%);
-  color: #333333;
+  color: $body-text-color;
   font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
   font-size: 14px;
   line-height: 1.6em;
@@ -12,15 +18,15 @@ body {
 
 /* Links */
 a:link {
-  color: #41768c;
+  color: $link-color;
 }
 
 a:visited {
-  color: #66418c;
+  color: $link-visited-color;
 }
 
 a:hover {
-  background-color: #41768c !important;
+  background-color: $link-color !important;
   color: #ffffff;
   text-decoration: none;
 }
@@ -42,7 +48,7 @@ h1 {
 
   a:link,
   a:visited {
-    color: #333333;
+    color: $body-text-color;
     text-decoration: none;
   }
 
@@ -57,7 +63,7 @@ h2 {
 
   a:link,
   a:visited {
-    color: #333333;
+    color: $body-text-color;
     text-decoration: none;
   }
 }
@@ -103,7 +109,7 @@ header {
   padding: 15px;
 
   .description {
-    color: #434f54;
+    color: mix($body-text-color, $body-background-color);
     font-weight: bold;
     font-size: 1.6em;
     letter-spacing: -0.05em;
