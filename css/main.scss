@@ -4,6 +4,10 @@
 body {
   background: #a5cee0;
   background: linear-gradient(to bottom, rgb(227, 240, 245) 0%, rgb(174, 211, 227) 80%, rgb(169, 208, 225) 100%);
+  color: #333333;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.6em;
 }
 
 /* Links */
@@ -66,10 +70,6 @@ h3 + p {
 }
 
 .container {
-  color: #333333;
-  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.6em;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
