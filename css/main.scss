@@ -85,6 +85,10 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+
+  @media (max-width: 719px) {
+    width: 100%;
+  }
 }
 
 section {
@@ -94,6 +98,12 @@ section {
   float: left;
   padding: 2em;
   width: 50%;
+
+  @media (max-width: 719px) {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+  }
 }
 
 .content {
