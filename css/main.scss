@@ -7,6 +7,8 @@ $body-text-color: #333333;
 $link-color: #41768c;
 $link-visited-color: #66418c;
 
+@import "icons";
+
 body {
   background: $body-background-color;
   background: linear-gradient(to bottom, rgb(227, 240, 245) 0%, rgb(174, 211, 227) 80%, rgb(169, 208, 225) 100%);
@@ -127,10 +129,6 @@ header {
 }
 
 #next_meeting {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/splash_green.png);
-  }
-
   .upb_events {
     margin-top: 1em;
   }
@@ -146,8 +144,7 @@ header {
   }
 }
 
-.upb_more a,
-#mailing_list .more {
+.upb_more a {
   background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/upcoming.gif) 0 50% no-repeat;
   display: block;
   float: left;
@@ -156,36 +153,11 @@ header {
 }
 
 #mailing_list {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/new_mail.png);
-  }
-
   .more {
     background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/google_groups.png) 0 50% no-repeat;
-  }
-}
-
-#what {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/ruby.png);
-  }
-}
-
-#who {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/smiley.png);
-  }
-}
-
-#about {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/users.png);
-  }
-}
-
-#stream {
-  .content {
-    background-image: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/monitor.png);
+    display: inline-block;
+    min-height: 16px;
+    padding-left: 20px;
   }
 }
 
