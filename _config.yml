@@ -14,3 +14,42 @@ markdown: kramdown
 
 exclude:
 - README.md
+
+# Site variables
+companies:
+- name: Autobutler
+  url: http://www.autobutler.dk
+- name: Be My Eyes
+  url: http://www.bemyeyes.org/
+- name: Benjamin Media
+  url: http://www.benjamin.dk/
+- name: Biletto
+  url: http://www.Billetto.dk
+- name: BiQ
+  url: http://www.biq.dk
+- name: Capgemini
+  url: http://www.capgemini.dk/
+- name: FirmaFon
+  url: http://www.firmafon.dk
+- name: GoMore
+  url: http://www.gomore.dk
+- name: Karnov
+  url: http://www.karnov.dk
+- name: Lokalebasen
+  url: http://www.lokalebasen.dk
+- name: Milestoneselling
+  url: http://www.milestoneselling.dk
+- name: myphoner
+  url: https://www.myphoner.com
+- name: NineConsult
+  url: http://www.nineconsult.dk
+- name: Nokia
+  url: http://www.nokia.dk
+- name: Podio
+  url: http://www.podio.dk
+- name: Single.dk
+  url: http://www.single.dk
+- name: The Fashion
+  url: http://thefashion.dk
+- name: Zendesk
+  url: http://www.zendesk.com
