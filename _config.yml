@@ -17,6 +17,8 @@ exclude:
 
 # Site variables
 companies:
+- name: Admechanic
+  url: http://www.admechanic.net
 - name: Autobutler
   url: http://www.autobutler.dk
 - name: Be My Eyes
