@@ -35,24 +35,10 @@ layout: default
     <h2>Who is using Ruby in Denmark?</h2>
 
     <p>
-      <a href="http://www.Autobutler.dk">Autobutler</a>,
-      <a href="http://www.bemyeyes.org/">Be My Eyes</a>,
-      <a href="http://www.benjamin.dk/">Benjamin Media</a>,
-      <a href="http://www.Billetto.dk">Biletto</a>,
-      <a href="http://www.biq.dk">BiQ</a>,
-      <a href="http://www.Capgemini.dk/">Capgemini</a>,
-      <a href="http://www.FirmaFon.dk">FirmaFon</a>,
-      <a href="http://www.GoMore.dk">GoMore</a>,
-      <a href="http://www.Karnov.dk">Karnov</a>,
-      <a href="http://www.Lokalebasen.dk">Lokalebasen</a>,
-      <a href="http://www.Milestoneselling.dk">Milestoneselling</a>,
-      <a href="https://www.myphoner.com">myphoner</a>,
-      <a href="http://www.NineConsult.dk">NineConsult</a>,
-      <a href="http://www.Nokia.dk">Nokia</a>,
-      <a href="http://www.Podio.dk">Podio</a>,
-      <a href="http://www.Single.dk">Single.dk</a>,
-      <a href="http://thefashion.dk">The Fashion</a>,
-      <a href="http://www.zendesk.com">Zendesk</a>,
+      {% assign companies = site.companies | sort: 'name' %}
+      {% for company in companies %}
+        <a href="{{ company.url }}">{{ company.name }}</a>,
+      {% endfor %}
       and several others
     </p>
 
