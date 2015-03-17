@@ -123,5 +123,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (= 33)
-  jekyll (~> 2.4.0)
+  github-pages
+  jekyll

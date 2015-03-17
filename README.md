@@ -1,6 +1,6 @@
 # Copenhagen Ruby Brigade Website
 
-A simple Jekyll based website for the Copenhagen Ruby Brigade.
+A simple Jekyll based website for the [Copenhagen Ruby Brigade](http://www.copenhagenrb.dk).
 
 Built with a few goals:
 
