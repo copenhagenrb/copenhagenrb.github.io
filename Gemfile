@@ -1,5 +1,4 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll", "~> 2.4.0"
-gem "github-pages", "33"
+gem 'jekyll'
+gem 'github-pages'
