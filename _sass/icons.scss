@@ -1,6 +1,6 @@
 @mixin content-icon($key) {
   .content {
-    background-image: url("http://mentalized.net/files/copenhagenrb.dk/images/icons/32x32/#{$key}.png");
+    background-image: url("/assets/images/icons/#{$key}.png");
   }
 }
 
