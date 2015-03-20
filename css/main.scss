@@ -2,44 +2,45 @@
 # The main Sass file needs front matter (the dashes are enough)
 ---
 
-$body-background-color: #a5cee0;
-$body-text-color: #333333;
-$link-color: #41768c;
-$link-visited-color: #66418c;
-
-@import "icons";
 @import "base";
 @import "layout";
 
-#next_meeting {
-  .upb_events {
-    margin-top: 1em;
-  }
-
-  .upb_date {
-    font-weight: bold;
-    display: inline;
-  }
-
-  .upb_event {
-    margin-bottom: 1em;
-    margin-left: 2em;
-  }
+#intro {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 18px;
 }
 
-.upb_more a {
-  background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/upcoming.gif) 0 50% no-repeat;
-  display: block;
-  float: left;
-  min-height: 16px;
-  padding-left: 20px;
+#hero {
+  background: #f6f6f6;
+  padding: 50px 0;
 }
 
-#mailing_list {
-  .more {
-    background: url(http://mentalized.net/files/copenhagenrb.dk/images/icons/google_groups.png) 0 50% no-repeat;
-    display: inline-block;
-    min-height: 16px;
-    padding-left: 20px;
-  }
+#using-ruby {
+  text-align: center;
+  margin: 20px;
+}
+#using-ruby a {
+  margin: 20px;
+  padding: 10px;
+  line-height: 50px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: 'Source Code Pro', 'Georgia';
+  font-weight: 400;
+  white-space: nowrap;
+}
+#using-ruby a:visited {
+  color: #D26E7A;
+}
+#using-ruby a:hover,
+#using-ruby a:focus {
+  color: #fff;
+  background: #D0021B;
+  text-decoration: none;
+}
+
+#timeline {
+  text-align: center;
 }
