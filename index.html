@@ -1,66 +1,63 @@
 ---
 layout: default
 ---
-<section id="next_meeting">
-  <div class="upcoming_badge content">
-    <div class="upb_header"><span class="upb_text"><h2><a href="http://lanyrd.com/series/copenhagen-ruby-brigade/">Upcoming Events</a></h2></span></div>
-
-    <div class="upb_events">
-      <script src="http://l.yimg.com/a/i/us/pps/listbadge_1.6.js">{"pipe_id":"611d41e24d277880aa7a8303d5fab017","_btype":"list","height":"220px"}</script>
+<section id="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Upcoming Events</h2>
+        <script src="http://l.yimg.com/a/i/us/pps/listbadge_1.6.js">{"pipe_id":"611d41e24d277880aa7a8303d5fab017","_btype":"list","height":"220px"}</script>
+      </div>
+      <div class="col-sm-6">
+        <h2>Mailing List</h2>
+        <p>Most of our discussion and organizing takes place on our mailing list. If you would like to join the Copenhagen Ruby Brigade, this is where you sign up.</p>
+        <a href="http://groups.google.com/group/copenhagen-ruby-user-group" target="_blank">Sign up for the mailing list</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="mailing_list">
-  <div class="content">
-    <h2>Mailing list</h2>
-    <p>Most of our discussion and organizing takes place on our <a href="http://groups.google.com/group/copenhagen-ruby-user-group">mailing list</a>. If you would like to join the <a href="http://copenhagenrb.dk" title="Ruby and Rails User Group in København, Denmark">Copenhagen Ruby Brigade</a>, this is where you <a href="http://groups.google.com/group/copenhagen-ruby-user-group/subscribe" title="Signing up for the mailing list is the closest we get to becoming an official member of the Brigade">sign up</a>.</p>
-    <p><a class="more" href="http://groups.google.com/group/copenhagen-ruby-user-group">Visit the mailing list</a></p>
-  </div>
-</section>
 
-<section id="what">
-  <div class="content">
-    <h2>What is Ruby?</h2>
-    <p><a href="http://ruby-lang.org" title="Ruby language website">Ruby</a> is a dynamic, general purpose, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
 
-    <p>It is a highly object oriented language designed to be "more powerful than Perl, and more object-oriented than Python" and draws inspiration from languages like Lisp and Smalltalk.</p>
+<div class="container">
 
-    <p><a href="http://ruby-lang.org" title="The official Ruby website">Learn more about Ruby on the official Ruby site</a></p>
-  </div>
-</section>
-
-<section id="who">
-  <div class="content">
-    <h2>Who is using Ruby in Denmark?</h2>
-
-    <p>
+  <section>
+    
+    <h2>Who is using Ruby?</h2>
+    <div id="using-ruby">
       {% assign companies = site.companies | sort: 'name' %}
       {% for company in companies %}
-        <a href="{{ company.url }}">{{ company.name }}</a>,
+        <a href="{{ company.url }}" target="_blank">{{ company.name }}</a>
       {% endfor %}
-      and several others
-    </p>
+    </div>
 
-  </div>
-</section>
+  </section>
 
-<section id="about">
-  <div class="content">
-    <h2>About the group</h2>
-    <p><a href="http://copenhagenrb.dk" title="Ruby and Rails User Group in København, Denmark">Copenhagen Ruby Brigade</a> is a loosely organized group of Ruby enthusiasts in or near <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=copenhagen,+denmark&amp;sll=37.0625,-95.677068&amp;sspn=50.111473,68.554688&amp;ie=UTF8&amp;z=12&amp;iwloc=addr" title="Where in the world is Copenhagen?">Copenhagen, Denmark</a>. We get together roughly every month to listen to presentations, discuss issues, and generally socialize with like-minded geeks.</p>
+  <hr>
 
-    <p>Wether you're a seasoned Ruby hacker or have never written a single line of Ruby code, you're welcome at our meetings</a>. All we require is an interest in Ruby, and preferably a willingness to join the discussions or perhaps even present a topic.</p>
+  <section>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>What is Ruby?</h2>
+        <p>Ruby is a dynamic, general purpose, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
+        <p>It is a highly object oriented language designed to be "more powerful than Perl, and more object-oriented than Python" and draws inspiration from languages like Lisp and Smalltalk.</p>
+        <p><a href="https://ruby-lang.org" target="_blank">Learn more about Ruby on the official Ruby site</a></p>
+      </div>
+      <div class="col-md-6">
+        <h2>About the group</h2>
+        <p><a href="http://copenhagenrb.dk" title="Ruby and Rails User Group in København, Denmark">Copenhagen Ruby Brigade</a> is a loosely organized group of Ruby enthusiasts in or near <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=copenhagen,+denmark&amp;sll=37.0625,-95.677068&amp;sspn=50.111473,68.554688&amp;ie=UTF8&amp;z=12&amp;iwloc=addr" title="Where in the world is Copenhagen?">Copenhagen, Denmark</a>. We get together roughly every month to listen to presentations, discuss issues, and generally socialize with like-minded geeks.</p>
+        <p>Wether you're a seasoned Ruby hacker or have never written a single line of Ruby code, you're welcome at our meetings. All we require is an interest in Ruby, and preferably a willingness to join the discussions or perhaps even present a topic.</p>
+        <p>Our main language is danish, but if you ask nicely most people are willing to switch to english. Don't let language barriers stop you from attending.</p>
+      </div>
+    </div>
+  </section>
 
-    <p>Our main language is danish, but if you ask nicely most people are willing to switch to english. Don't let language barriers stop you from attending.</p>
-  </div>
-</section>
+  <hr>
 
-<section id="stream">
-  <div class="content">
-    <h2>Members activity</h2>
-
+  <section id="timeline">
+    <h2>Member activity</h2>
     <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/copenhagenrb/lists/copenhagenrb" data-widget-id="577131471271522304">Tweets from https://twitter.com/copenhagenrb/lists/copenhagenrb</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </div>
-</section>
+  </section>
+
+</div>

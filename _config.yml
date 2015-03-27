@@ -2,7 +2,7 @@
 title: Copenhagen Ruby Brigade
 description: >
   A group of Ruby enthusiasts from Copenhagen, Denmark who meet roughly every
-  month to talk about Ruby, programming, and other related topics.
+  month to talk about Ruby, programming, and other related topics
 baseurl: ""
 url: "http://copenhagenrb.dk"
 twitter_username: copenhagenrb
@@ -38,6 +38,8 @@ companies:
   url: http://www.firmafon.dk
 - name: GoMore
   url: http://www.gomore.dk
+- name: Greenline
+  url: https://www.greenline.dk
 - name: Karnov
   url: http://www.karnov.dk
 - name: Lokalebasen
