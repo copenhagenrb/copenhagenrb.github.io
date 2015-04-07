@@ -26,8 +26,8 @@ companies:
   url: http://www.benjamin.dk/
 - name: BiQ
   url: http://www.biq.dk
-- name: Biletto
-  url: http://www.Billetto.dk
+- name: Billetto
+  url: https://billetto.dk
 - name: Capgemini
   url: http://www.capgemini.dk/
 - name: Downtown
