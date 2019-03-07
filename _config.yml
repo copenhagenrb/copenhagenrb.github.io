@@ -18,8 +18,6 @@ exclude:
 companies:
 - name: Abtion
   url: http://www.abtion.com
-- name: Admechanic
-  url: http://www.admechanic.net
 - name: Autobutler
   url: http://www.autobutler.dk
 - name: Be My Eyes
