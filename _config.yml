@@ -38,8 +38,6 @@ companies:
   url: http://fab-it.dk/
 - name: Firmafon
   url: http://www.firmafon.dk
-- name: Gfish
-  url: http://gfish.com
 - name: GoMore
   url: http://www.gomore.dk
 - name: Greenline
@@ -56,8 +54,6 @@ companies:
   url: http://www.nineconsult.dk
 - name: Nokia
   url: http://www.nokia.dk
-- name: Podio
-  url: http://www.podio.dk
 - name: RelationshusetGekko
   url: http://www.rhg.dk
 - name: Single.dk
@@ -66,8 +62,6 @@ companies:
   url: http://substancelab.dk
 - name: Take Offer
   url: http://www.takeoffer.dk
-- name: The Fashion
-  url: http://thefashion.dk
 - name: Tonsser
   url: https://tonsser.com
 - name: Vivino
