@@ -34,6 +34,8 @@ companies:
   url: https://www.donkey.bike/
 - name: Downtown
   url: http://www.downtown.dk
+- name: Driversnote
+  url: https://www.driversnote.com
 - name: Fab:IT ApS
   url: http://fab-it.dk/
 - name: Firmafon
@@ -54,6 +56,8 @@ companies:
   url: http://www.nineconsult.dk
 - name: Nokia
   url: http://www.nokia.dk
+- name: Podio
+  url: https://www.podio.com
 - name: RelationshusetGekko
   url: http://www.rhg.dk
 - name: Single.dk
