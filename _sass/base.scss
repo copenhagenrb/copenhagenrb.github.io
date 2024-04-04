@@ -1,6 +1,11 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
-  font-family: 'Source Code Pro', 'Georgia';
+  font-family: "Source Code Pro", "Georgia";
   font-weight: 700;
 }
 
@@ -25,9 +30,9 @@ hr {
 }
 
 a {
-  color: #D0021B;
+  color: #d0021b;
 }
 a:hover,
 a:focus {
-  color: #D0021B;
+  color: #d0021b;
 }

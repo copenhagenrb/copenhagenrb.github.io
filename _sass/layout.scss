@@ -1,14 +1,12 @@
 body {
-  border-bottom: 10px solid #D0021B;
+  border-bottom: 10px solid #d0021b;
 }
-
-
 
 #header {
   height: 400px;
-  background: url('/images/copenhagen.png') no-repeat center center;
+  background: url("/images/copenhagen.png") no-repeat center center;
   background-size: cover;
-  
+
   display: -webkit-flex;
   -webkit-align-items: center;
   -webkit-justify-content: center;
@@ -17,9 +15,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 #header h1 {
   margin: 0;
   color: #fff;
   font-weight: 600;
-  text-shadow: 0 0 10px rgba(0,0,0, .7);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }

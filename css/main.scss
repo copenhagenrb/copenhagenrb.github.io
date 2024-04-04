@@ -21,23 +21,26 @@
   text-align: center;
   margin: 20px;
 }
+
 #using-ruby a {
   margin: 20px;
   padding: 10px;
   line-height: 50px;
   border-radius: 3px;
   font-size: 18px;
-  font-family: 'Source Code Pro', 'Georgia';
+  font-family: "Source Code Pro", "Georgia";
   font-weight: 400;
   white-space: nowrap;
 }
+
 #using-ruby a:visited {
-  color: #D26E7A;
+  color: #d26e7a;
 }
+
 #using-ruby a:hover,
 #using-ruby a:focus {
   color: #fff;
-  background: #D0021B;
+  background: #d0021b;
   text-decoration: none;
 }
 
