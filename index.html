@@ -1,30 +1,45 @@
 ---
 layout: default
 ---
+
 <section id="hero">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 text-center">
         <h2>Upcoming Events</h2>
-        <a href="https://www.meetup.com/Copenhagen-Ruby-Brigade/" style="display:block;">
-        <img src="https://a248.e.akamai.net/secure.meetupstatic.com/s/img/041003812446967856280/logo/svg/logo--script.svg" width="400"><br>
-        Go to our Meetup Page to see past and upcoming events </a>
+        <a
+          href="https://www.meetup.com/Copenhagen-Ruby-Brigade/"
+          style="display: block"
+        >
+          <img
+            src="https://a248.e.akamai.net/secure.meetupstatic.com/s/img/041003812446967856280/logo/svg/logo--script.svg"
+            width="400"
+          /><br />
+          Go to our Meetup Page to see past and upcoming events
+        </a>
       </div>
 
       <div class="col-sm-6">
         <h2>Mailing List</h2>
         <p>
           Most of our discussion and organizing takes place on our mailing list.
-          If you would like to join the Copenhagen Ruby Brigade, this is where you sign up.
+          If you would like to join the Copenhagen Ruby Brigade, this is where
+          you sign up.
         </p>
 
         <p>
-          <a href="http://groups.google.com/group/copenhagen-ruby-user-group" target="_blank">Sign up for the mailing list</a>
+          <a
+            href="http://groups.google.com/group/copenhagen-ruby-user-group"
+            target="_blank"
+            >Sign up for the mailing list</a
+          >
         </p>
         <h2>Slack Group</h2>
         <p>You can also join our Slack group, for quicker communication.</p>
         <p>
-          <a href="http://copenhagenrb.herokuapp.com/">Sign up to our Slack group</a>
+          <a href="http://copenhagenrb.herokuapp.com/"
+            >Sign up to our Slack group</a
+          >
         </p>
       </div>
     </div>
@@ -35,30 +50,35 @@ layout: default
   <section>
     <h2>Who is using Ruby?</h2>
     <div id="using-ruby">
-      {% assign companies = site.companies | sort: 'name' %}
-      {% for company in companies %}
-        <a href="{{ company.url }}" target="_blank">{{ company.name }}</a>
+      {% assign companies = site.companies | sort: 'name' %} {% for company in
+      companies %}
+      <a href="{{ company.url }}" target="_blank">{{ company.name }}</a>
       {% endfor %}
     </div>
   </section>
 
-  <hr>
+  <hr />
 
   <section>
     <div class="row">
       <div class="col-md-6">
         <h2>What is Ruby?</h2>
         <p>
-          Ruby is a dynamic, general purpose, open source programming language with a focus on simplicity and productivity.
-          It has an elegant syntax that is natural to read and easy to write.
+          Ruby is a dynamic, general purpose, open source programming language
+          with a focus on simplicity and productivity. It has an elegant syntax
+          that is natural to read and easy to write.
         </p>
 
         <p>
-          It is a highly object oriented language designed to be "more powerful than Perl, and more object-oriented than Python" and draws inspiration from languages like Lisp and Smalltalk.
+          It is a highly object oriented language designed to be "more powerful
+          than Perl, and more object-oriented than Python" and draws inspiration
+          from languages like Lisp and Smalltalk.
         </p>
 
         <p>
-          <a href="https://ruby-lang.org" target="_blank">Learn more about Ruby on the official Ruby site</a>
+          <a href="https://ruby-lang.org" target="_blank"
+            >Learn more about Ruby on the official Ruby site</a
+          >
         </p>
       </div>
 
@@ -66,18 +86,31 @@ layout: default
         <h2>About the group</h2>
 
         <p>
-          <a href="http://copenhagenrb.dk" title="Ruby and Rails User Group in København, Denmark">Copenhagen Ruby Brigade</a> is a loosely organized group of Ruby enthusiasts in or near <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=copenhagen,+denmark&amp;sll=37.0625,-95.677068&amp;sspn=50.111473,68.554688&amp;ie=UTF8&amp;z=12&amp;iwloc=addr" title="Where in the world is Copenhagen?">Copenhagen, Denmark</a>.
-          We get together roughly every month to listen to presentations, discuss issues, and generally socialize with like-minded geeks.
+          <a
+            href="http://copenhagenrb.dk"
+            title="Ruby and Rails User Group in København, Denmark"
+            >Copenhagen Ruby Brigade</a
+          >
+          is a loosely organized group of Ruby enthusiasts in or near
+          <a
+            href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=copenhagen,+denmark&amp;sll=37.0625,-95.677068&amp;sspn=50.111473,68.554688&amp;ie=UTF8&amp;z=12&amp;iwloc=addr"
+            title="Where in the world is Copenhagen?"
+            >Copenhagen, Denmark</a
+          >. We get together roughly every month to listen to presentations,
+          discuss issues, and generally socialize with like-minded geeks.
         </p>
 
         <p>
-          Wether you're a seasoned Ruby hacker or have never written a single line of Ruby code, you're welcome at our meetings.
-          All we require is an interest in Ruby, and preferably a willingness to join the discussions or perhaps even present a topic.
+          Wether you're a seasoned Ruby hacker or have never written a single
+          line of Ruby code, you're welcome at our meetings. All we require is
+          an interest in Ruby, and preferably a willingness to join the
+          discussions or perhaps even present a topic.
         </p>
 
         <p>
-          Our main language is Danish, but if you ask nicely most people are willing to switch to English.
-          Don't let language barriers stop you from attending.
+          Our main language is Danish, but if you ask nicely most people are
+          willing to switch to English. Don't let language barriers stop you
+          from attending.
         </p>
       </div>
     </div>
