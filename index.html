@@ -34,6 +34,24 @@ layout: default
         </p>
       </div>
     </div>
+
+    <div class="row" style="margin-top: 24px">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h3>We meet every 3 months on the 2nd Wednesday of the month.</h3>
+        <br />
+
+        Next time will be
+        <strong id="date">0000-00-00</strong>
+        as solved with the following
+        <a href="https://en.wikipedia.org/wiki/Code_golf">code golfed</a> Ruby
+        snippet:
+
+        <pre
+          style="margin: 0; line-height: 125%; background: #272822"
+        ><span style="color: #f8f8f2">require</span><span style="color: #e6db74">&#39;date&#39;</span>
+<span style="color: #e6db74">&quot;#{</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">Date</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">today</span><span style="color: #f8f8f2">..</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">find{_1</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">mon</span><span style="color: #f92672">%</span><span style="color: #ae81ff">3</span><span style="color: #f92672">&lt;</span><span style="color: #ae81ff">1</span><span style="color: #f92672">&amp;&amp;</span><span style="color: #f8f8f2">_1</span> <span style="color: #66d9ef">in</span> <span style="color: #e6db74">wday</span><span style="color: #f8f8f2">:</span><span style="color: #ae81ff">3</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">day</span><span style="color: #f8f8f2">:</span><span style="color: #ae81ff">8</span><span style="color: #f8f8f2">..</span><span style="color: #ae81ff">14</span><span style="color: #e6db74">}}&quot;</span></pre>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -109,3 +127,9 @@ layout: default
     </div>
   </section>
 </div>
+
+<script type="text/ruby">
+  require 'js'
+  require 'date'
+  JS.global[:document].getElementById('date')[:innerText] = "#{(Date.today..).find{_1.mon%3<1&&_1 in wday:3,day:8..14}}"
+</script>
