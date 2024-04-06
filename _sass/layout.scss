@@ -21,4 +21,9 @@ body {
   color: #fff;
   font-weight: 600;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  font-size: 64px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+  }
 }
