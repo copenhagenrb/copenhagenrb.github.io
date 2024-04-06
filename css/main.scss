@@ -17,6 +17,14 @@
   padding: 50px 0;
 }
 
+.logo {
+  height: 114px;
+  max-width: 75%;
+  object-fit: contain;
+  display: block;
+  margin: 20px auto;
+}
+
 #using-ruby {
   text-align: center;
   margin: 20px;
@@ -46,4 +54,13 @@
 
 #timeline {
   text-align: center;
+}
+
+#date {
+  font-size: 24px;
+  font-family: "Source Code Pro", "Georgia";
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 }
