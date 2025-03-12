@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id="hero">
+<section class="hero m-5">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 text-center">
@@ -55,9 +55,9 @@ layout: default
   </div>
 </section>
 
-<div class="container">
+<div class="container m-5">
   <section>
-    <h2>Who is using Ruby?</h2>
+    <h2>Who is using Ruby in Denmark?</h2>
     <div id="using-ruby">
       {% assign companies = site.companies | sort_natural: 'name' %} {% for
       company in companies %}
@@ -65,10 +65,10 @@ layout: default
       {% endfor %}
     </div>
   </section>
+</div>
 
-  <hr />
-
-  <section>
+<section class="hero">
+  <div class="container">
     <div class="row">
       <div class="col-md-6">
         <h2>What is Ruby?</h2>
@@ -85,9 +85,7 @@ layout: default
         </p>
 
         <p>
-          <a href="https://ruby-lang.org" target="_blank">
-            Learn more about Ruby on the official Ruby site
-          </a>
+          <a href="https://ruby-lang.org" target="_blank">Learn more about Ruby on the official Ruby site</a>.
         </p>
       </div>
 
@@ -105,9 +103,7 @@ layout: default
           <a
             href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=copenhagen,+denmark&amp;sll=37.0625,-95.677068&amp;sspn=50.111473,68.554688&amp;ie=UTF8&amp;z=12&amp;iwloc=addr"
             title="Where in the world is Copenhagen?"
-          >
-            Copenhagen, Denmark </a
-          >. We get together roughly every month to listen to presentations,
+          >Copenhagen, Denmark</a>. We get together roughly every month to listen to presentations,
           discuss issues, and generally socialize with like-minded geeks.
         </p>
 
@@ -125,8 +121,8 @@ layout: default
         </p>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
 
 <script type="text/ruby">
   require 'js'
