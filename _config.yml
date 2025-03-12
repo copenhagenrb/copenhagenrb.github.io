@@ -17,48 +17,48 @@ exclude:
 # Site variables
 companies:
   - name: Abtion
-    url: http://www.abtion.com
+    url: https://www.abtion.com/
   - name: Autobutler
-    url: http://www.autobutler.dk
+    url: https://www.autobutler.dk/
   - name: Be My Eyes
-    url: http://www.bemyeyes.org/
+    url: https://www.bemyeyes.com/
   - name: BiQ
-    url: http://www.biq.dk
+    url: https://biq.dk/
   - name: Billetto
-    url: https://billetto.dk
+    url: https://billetto.dk/
   - name: Capgemini
-    url: http://www.capgemini.dk/
+    url: https://www.capgemini.com/
   - name: Donkey Republic
     url: https://www.donkey.bike/
   - name: Driversnote
-    url: https://www.driversnote.com
+    url: https://www.driversnote.com/
   - name: Fab:IT ApS
-    url: http://fab-it.dk/
+    url: https://fab-it.dk/
   - name: GoMore
-    url: http://www.gomore.dk
+    url: https://gomore.dk/
   - name: Greenline
-    url: https://www.greenline.dk
+    url: https://www.greenline.dk/
   - name: Karnov
-    url: http://www.karnov.dk
+    url: https://www.karnovgroup.dk/
   - name: Lokalebasen
-    url: http://www.lokalebasen.dk
+    url: https://www.lokalebasen.dk/
   - name: myphoner
-    url: https://www.myphoner.com
-  - name: NineConsult
-    url: http://www.nineconsult.dk
+    url: https://www.myphoner.com/
+  - name: Nine
+    url: https://nine.dk/
   - name: Nokia
-    url: http://www.nokia.dk
+    url: https://www.nokia.com/
   - name: Podio
-    url: https://www.podio.com
+    url: https://www.podio.com/
   - name: Single.dk
-    url: http://www.single.dk
+    url: https://www.single.dk/
   - name: Substance Lab
-    url: http://substancelab.dk
+    url: https://substancelab.dk/
   - name: Tonsser
-    url: https://tonsser.com
+    url: https://tonsser.com/
   - name: Vivino
-    url: http://www.vivino.com
+    url: https://www.vivino.com/
   - name: Zendesk
-    url: http://www.zendesk.com
+    url: https://www.zendesk.com/
   - name: Zetland
-    url: https://www.zetland.dk
+    url: https://www.zetland.dk/
